@@ -1,0 +1,52 @@
+{
+  "selected_model": "Random Forest",
+  "selection_method": "lowest validation RMSE among Linear Regression and Random Forest",
+  "validation_rmse": {
+    "Linear Regression": 84.16346124420615,
+    "Random Forest": 82.42324477849472
+  },
+  "split_dates": {
+    "train_through": "2024-03-12",
+    "validation_through": "2024-03-27",
+    "test_after": "2024-03-27"
+  },
+  "split_labeled_rows": {
+    "train": 572,
+    "validation": 126,
+    "test_comparison": 96
+  },
+  "source_columns": [
+    "Date",
+    "City",
+    "PM2.5",
+    "PM10",
+    "CO",
+    "NO2",
+    "Ozone",
+    "Temperature",
+    "AQI_Level"
+  ],
+  "available_weather_variables": [
+    "Temperature"
+  ],
+  "test_metrics": {
+    "Linear Regression": {
+      "MAE": 70.85867370593957,
+      "RMSE": 83.46147248253725,
+      "R2": -0.024903060418797418,
+      "n": 96
+    },
+    "Random Forest": {
+      "MAE": 70.38880432041145,
+      "RMSE": 84.18358384729217,
+      "R2": -0.04271477125655054,
+      "n": 96
+    },
+    "Today's PM2.5 baseline": {
+      "MAE": 84.01520833333335,
+      "RMSE": 104.41012718282327,
+      "R2": -0.6039689409777413,
+      "n": 96
+    }
+  }
+}
